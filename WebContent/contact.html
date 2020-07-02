@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="筑风|新能源|风能|绿色能源|太阳能|光伏|项目规划" />
+  	<meta name="description" content="北京筑风新能源科技有限公司(zfwind.com)是一家提供风电场咨询规划、风电场项目开发、风电场投融资、风电场工程建设、发电运维五大业务解决方案的新能源科技公司"/>
+    <title>联系我们-筑风科技</title>
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link href="css/style.css?v=1" rel="stylesheet" type="text/css" />    
+    <link href="css/about.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DD279b2a90afdf0ae7a3796787a0742e"></script>
+</head>
+<body>
+<div class="color-shit">
+</div>
+<div class="header">
+    <div class="nav">
+         <ul>
+			<li style="float:left"><img src="images/wind.gif" class="logo-gif"><img src="images/logo2.png" class="logo-png"></li>
+            <li><a class="active" href="contact.html">联系我们</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="business.html">核心业务</a></li>
+			<li><a href="index.html">首&nbsp;&nbsp;&nbsp;页</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <p class="clear-font">北京筑风新能源科技有限公司</p>
+    <div class="cloud"></div>
+</div>
+<div class="content">
+    <div class="content_title">
+        <div class="ll"><span>CONTACT US</span><p>联系我们</p></div><div class="tline"></div>
+    </div>
+    <div class="box">
+        <div class="mp">
+            <div style="margin-top:60px;width:850px;height:640px;;font-size:12px" id="map"></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="dibu">
+    <div class="text">公司地址：北京市西城区后海北沿49号院</div>
+    <div class="text">电话：010-57489799</div>
+    <div class="line"></div>
+    <div class="text">Copyright &copy;筑风科技版权所有2017-2017 京ICP备17043608号</div>
+    </div>
+</div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.392435,39.949473),18);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"筑风科技（北京）新能源科技有限公司",imageOffset: {width:-46,height:-21},position:{lat:39.950621,lng:116.390962}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+</html>

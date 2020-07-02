@@ -1,0 +1,65 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,table,tbody,p,th,td,em{-webkit-text-size-adjust:none;margin:0;padding:0;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:12px;font-family:榛戜綋;}
+html,body{height:100%;}
+body {min-width: 1000px;}
+img,input,button,a,select,textarea{margin:0;padding:0;resize:none;border:none;outline:none;} 
+ol,ul{list-style:none;} 
+h1,h2,h3,h4,h5,h6,p,em,i,b,em{font-size:100%;word-wrap:break-word;font-weight:normal;font-style:normal;}
+a:active, a:focus{outline:none; cursor: pointer;}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
+*html{background-image:url(about:blank);background-attachment:fixed;} 
+
+.header{width: 950px; margin: 0 auto;}
+.header .nav{ position:absolute;top: 15px; z-index:10;width:960px;}
+.header .nav ul li{    
+	float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;}
+.header .nav ul li a{color:#fff; text-decoration: none;display: inline-block;margin-top: 32px;
+    padding: 4px 16px;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    transition:All .5s ease;-webkit-transition:All .5s ease;-moz-transition:All .5s ease;-o-transition:All .5s ease;
+	width: 58px;
+	text-align: center;
+}
+.header .nav ul li a.active{
+    border: 1px solid #fff;
+}
+.header .nav ul li a:hover{
+    border: 1px solid #fff;
+}
+.header .nav ul li:last-child{margin-right: 0;}
+
+.footer{ background: url(../images/bottom_bg.png) no-repeat top center; padding-top: 650px;}
+.dibu{width:850px; margin: 0 auto 0; color: #fff; }
+.dibu .text{ font-size: 22px; line-height: 44px;}
+.dibu .line{ width: 100px; height: 4px; background: #fff; margin: 15px 0;}
+.clear-font{text-shadow: -1px -1px 0 #fff, 1px 1px 0 #333, 1px 1px 0 #444;}
+.banner {width:100%;height: 468px;overflow:hidden;max-width: 1920px;background-image: url('../images/banner.jpg');background-position: center;background-repeat: no-repeat;}
+.color-shit {
+  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 120px;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0)); /* 标准的语法 */
+  z-index: 1;
+}
+.cloud {
+z-index:200;display:block; position:absolute;background-image:url('../images/cloud_img.png');background-repeat: repeat-x;background-position: center;height:124px;width:100%;min-width: 1000px;
+}
+.logo-gif {
+	margin-right: 12px;
+    position: relative;
+    top: -5px;
+}
+.logo-png {
+	margin-bottom: 28px;
+}

@@ -1,0 +1,44 @@
+.banner{ margin: 0 auto; position: relative;}
+.cloud{ position: absolute; bottom: 0;width: 100%;}
+.banner p{ position: absolute; width:100%; text-align: center; font-size: 46px; color: #fff; top: 208px; font-weight: bold;}
+.content{ width: 860px; margin: 60px auto 0; overflow: hidden}
+.content_title{ height: 80px;}
+.ll{ float: left; width: 240px; color: #4a87a4}
+.ll span{ display: block;}
+.ll p{ font-size: 30px; padding-top: 10px}
+.tline{ float: right; width: 610px; height: 3px; background: #4a87a4;margin-top:40px;}
+.tt{ font-size: 28px; color:#4a87a4; line-height: 46px; margin-top:20px; }
+.bgtext span{ background:#4a87a4; color: #fff; font-size: 24px; padding: 2px 0 4px 4px }
+.bgtext{ margin: 20px 0}
+.hzimg{ margin-top:60px;}
+
+.img{ position: relative; height: 500px}
+.img img{ position: absolute;z-index: -1;}
+.img p{ position: absolute; top: 240px; left:625px; color: #fff; font-size: 38px; text-decoration: underline; line-height: 1.2em;}
+.img p i{ font-size: 18px; display: block}
+.img p span{ color:#4a87a4; text-decoration: underline}
+.te{ overflow: hidden;}
+.te .tline{ width: 250px; float: left}
+.te .tt{ width: 620px; float: left; color:#4a87a4; font-size: 28px; line-height: 46px; margin-top:40px;}
+.img2{ margin: 80px 0 20px}
+.img2 img{ right: 0;}
+.img2 p{ left: 95px; color:#4a87a4;}
+.img2 p span{ color: #fff}
+.img2 p i{ text-align: right; }
+.content_title2{ width: 600px; float: right}
+.content_title2 .ll{ float: right; text-align: right;}
+.content_title2 .tline{ margin-top: 20px; width: 400px;}
+.tt2{ width: 620px; float: right; color:#4a87a4;}
+
+
+
+
+
+
+
+
+
+
+
+
+
